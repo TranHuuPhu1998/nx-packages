@@ -15,9 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@myorg/is-check-size": ["packages/is-check-size/src/index.ts"],
-      "@myorg/is-even": ["packages/is-even/src/index.ts"],
-      "@myorg/is-odd": ["packages/is-odd/src/index.ts"]
+      "@myorg/open-ai-helpers": ["packages/open-ai-helpers/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

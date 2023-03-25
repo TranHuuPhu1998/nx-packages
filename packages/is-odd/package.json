@@ -1,6 +1,0 @@
-{
-  "name": "@myorg/is-odd",
-  "version": "0.0.2",
-  "type": "commonjs",
-  "publishConfig": { "@YOUR-USERNAME:registry": "https://npm.pkg.github.com" }
-}

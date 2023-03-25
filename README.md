@@ -47,7 +47,7 @@ export function isEven(x: number): boolean {
 
 ### Push your package to NPM
 - npm run build is-even
-- cd /Users/phutran/Documents/package/myorg/dist/packages/is-odd
+- cd /Users/phutran/Documents/package/myorg/dist/packages/is-even
 - update version package => "version": "0.0.3",
 - npm publish
 
@@ -58,6 +58,7 @@ export function isEven(x: number): boolean {
 ### Testing
 
 - npx nx test [is-even] runs the pre-configured Jest tests for the package
+- npx nx test open-ai-helpers
 
 ### Build
 

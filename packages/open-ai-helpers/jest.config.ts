@@ -1,6 +1,6 @@
 /* eslint-disable */
 export default {
-  displayName: 'is-even',
+  displayName: 'open-ai-helpers',
   preset: '../../jest.preset.js',
   globals: {
     'ts-jest': {
@@ -11,5 +11,5 @@ export default {
     '^.+\\.[tj]s$': 'ts-jest',
   },
   moduleFileExtensions: ['ts', 'js', 'html'],
-  coverageDirectory: '../../coverage/packages/is-even',
+  coverageDirectory: '../../coverage/packages/open-ai-helpers',
 };
