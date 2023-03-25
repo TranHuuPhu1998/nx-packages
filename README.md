@@ -46,8 +46,12 @@ export function isEven(x: number): boolean {
 ```
 
 ### Push your package to NPM
+- npm run build is-even
+- cd /Users/phutran/Documents/package/myorg/dist/packages/is-odd
+- update version package => "version": "0.0.3",
+- npm publish
 
-- npm publish dist/packages/is-even
+  
 - npm publish dist/packages/is-odd
 - npm publish dist/packages/is-check-size
 
