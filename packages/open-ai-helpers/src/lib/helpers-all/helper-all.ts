@@ -19,11 +19,14 @@ interface HelperFunction<T> {
  */
 
 export function HelpersAll<T>(arr: T[], fn?: HelperFunction<T>): boolean {
+
   if (typeof arr !== 'object' || !Array.isArray(arr) || arr.length <= 0) {
     throw new Error('Array not Unknown');
   }
+
   if (fn) {
     return arr.every(fn);
   }
+
   return true
 }
