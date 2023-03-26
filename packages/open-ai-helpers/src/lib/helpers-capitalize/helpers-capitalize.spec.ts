@@ -1,20 +1,25 @@
 import { HelpersCapitalize } from './helpers-capitalize';
 
-describe('HelpersAll check fooBar => FooBar', () => {
-  it('should work', () => {
-    expect(HelpersCapitalize('fooBar')).toEqual('FooBar');
+describe('HelpersCapitalize', () => {
+  it('should capitalize the first letter of a string', () => {
+    const input = 'hello';
+    const expectedOutput = 'Hello';
+    const result = HelpersCapitalize(input);
+    expect(result).toEqual(expectedOutput);
   });
-});
 
-describe('HelpersAll check foo => Foo', () => {
-  it('should work', () => {
-    expect(HelpersCapitalize('foo')).toEqual('Foo');
+  it('should handle empty strings', () => {
+    const input = '';
+    const expectedOutput = '';
+    const result = HelpersCapitalize(input);
+    expect(result).toEqual(expectedOutput);
   });
-});
 
-describe('HelpersAll check hello word => Hello word', () => {
-  it('should work', () => {
-    expect(HelpersCapitalize('hello word')).toEqual('Hello word');
+  it('should handle strings with only one letter', () => {
+    const input = 'h';
+    const expectedOutput = 'H';
+    const result = HelpersCapitalize(input);
+    expect(result).toEqual(expectedOutput);
   });
-});
 
+});

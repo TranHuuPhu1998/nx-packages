@@ -1,25 +1,24 @@
 import { HelpersAverage } from './helpers-average';
 
-describe('HelpersAll check input: [1, 2, 3] => expected: 2', () => {
-  it('should work', () => {
-    expect(HelpersAverage(...[1, 2, 3])).toEqual(2);
+describe('HelpersAverage', () => {
+  it('should return the average of an array of numbers', () => {
+    const input = [1, 2, 3, 4, 5];
+    const expectedOutput = 3;
+    const result = HelpersAverage(...input);
+    expect(result).toEqual(expectedOutput);
   });
-});
 
-describe('HelpersAll check input: 1, 2, 3 => expected: 2', () => {
-  it('should work', () => {
-    expect(HelpersAverage(1, 2, 3)).toEqual(2);
+  it('should handle an empty array', () => {
+    const input: number[] = [];
+    expect(() => {
+      HelpersAverage(...input);
+    }).toThrow('Numbers not Unknown');
   });
-});
 
-describe('HelpersAll check input: ...[1, 2, 3, 4] => expected: 2.5', () => {
-  it('should work', () => {
-    expect(HelpersAverage(...[1, 2, 3, 4])).toEqual(2.5);
-  });
-});
-
-describe('HelpersAll check if array [] => throw error', () => {
-  it('should work', () => {
-    expect(() => HelpersAverage()).toThrowError('Numbers not Unknown');
+  it('should handle arrays with only one number', () => {
+    const input = [1];
+    const expectedOutput = 1;
+    const result = HelpersAverage(...input);
+    expect(result).toEqual(expectedOutput);
   });
 });
