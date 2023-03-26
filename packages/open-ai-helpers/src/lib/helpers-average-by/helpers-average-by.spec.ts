@@ -1,4 +1,4 @@
-import { HelpersAverageBy } from './helpers-average';
+import { HelpersAverageBy } from './helpers-average-by';
 
 describe('HelpersAverageBy', () => {
   it('calculates the average of an array of numbers', () => {
