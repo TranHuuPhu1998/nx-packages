@@ -21,3 +21,8 @@ export * from './lib/helpers-is-valid-json/helpers-is-valid-json';
 export * from './lib/helpers-matches/helpers-matches';
 export * from './lib/helpers-take/helpers-take';
 export * from './lib/helpers-take-right/helpers-take-right';
+export * from './lib/helpers-base-to-string/helpers-base-to-string';
+export * from './lib/helpers-camel-case/helpers-camel-case';
+export * from './lib/helpers-group-by/helpers-group-by';
+export * from './lib/helpers-to-currency/helpers-to-currency';
+export * from './lib/helpers-validate-number/helpers-validate-number';
