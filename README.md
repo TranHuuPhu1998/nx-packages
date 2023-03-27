@@ -61,7 +61,7 @@ export function isEven(x: number): boolean {
 - npx nx test open-ai-helpers
 
 ### Build
-
+- npx nx build open-ai-helpers
 - npx nx build [is-odd]
 - npx nx run-many --target=build
 - npx nx affected --target=build **RUN NO CACHE**
@@ -77,3 +77,75 @@ export function isEven(x: number): boolean {
 - [DOC README] (https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#quoting-text) - Learn about README SYSTAX
 - [DOC NX] (https://nx.dev/) - Learn about nx tool
 - [DOC NPM] (https://docs.npmjs.com/) - Learn about npm
+
+## Example & Doc
+
+```
+  const { HelpersFindLast } = require('@phutran98/open-ai-helpers')
+
+  const input = [1, 2, 3, 4, 5];
+  const fn = (elem) => elem > 2;
+
+  console.log('HelpersFindLast: ',HelpersFindLast(input,fn))
+```
+or
+
+```
+  import { HelpersFindLast } from '@phutran98/open-ai-helpers'
+
+  const input = [1, 2, 3, 4, 5];
+  const fn = (elem) => elem > 2;
+
+  console.log('HelpersFindLast: ',HelpersFindLast(input,fn))
+```
+
+```
+  import { HelpersWords } from '@phutran98/open-ai-helpers'
+  const input = 'Hello world!'
+
+  console.log('HelpersWords: ',HelpersFindLast(input)) // ['Hello', 'world'];
+```
+
+```
+  import { HelpersAll } from '@phutran98/open-ai-helpers'
+  const input = [4, 2, 3];
+
+  console.log('HelpersAll: ',HelpersAll(input, x => x > 1)) // true
+```
+
+```
+  import { HelpersAllEqual } from '@phutran98/open-ai-helpers'
+  const input = [4, 2, 3];
+  const input2 = [1, 1, 1];
+
+  console.log('HelpersAllEqual: ',HelpersAllEqual(input)) // false
+  console.log('HelpersAllEqual: ',HelpersAllEqual(input2)) // true
+```
+
+```
+  import { HelpersApproximatelyEqual } from '@phutran98/open-ai-helpers'
+
+  console.log('HelpersApproximatelyEqual: ',HelpersApproximatelyEqual(Math.PI / 2.0, 1.5708)) // true
+  console.log('HelpersApproximatelyEqual: ',HelpersApproximatelyEqual(1, 2)) // false
+```
+
+```
+  import { HelpersArrayToCSV } from '@phutran98/open-ai-helpers'
+
+  console.log('HelpersArrayToCSV: ',HelpersArrayToCSV([['a', 'b'], ['c', 'd']])) // '"a","b"\n"c","d"'
+  console.log('HelpersHelpersArrayToCSVWords: ',HelpersArrayToCSV([['a', 'b'], ['c', 'd']], ';')) // '"a";"b"\n"c";"d"'
+```
+
+```
+  import { HelpersArrayToHtmlList } from '@phutran98/open-ai-helpers'
+
+  console.log('HelpersArrayToHtmlList: ',HelpersArrayToHtmlList(['item 1', 'item 2'])) // '<ul><li>item 1</li><li>item 2</li></ul>'
+```
+
+```
+  import { HelpersAverage } from '@phutran98/open-ai-helpers'
+
+  const input = [1, 2, 3, 4, 5];
+
+  console.log('HelpersAverage: ',HelpersAverage(input)) // 3
+```
