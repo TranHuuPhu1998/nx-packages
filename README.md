@@ -80,7 +80,7 @@ export function isEven(x: number): boolean {
 
 ## Example & Doc
 
-```
+```javascript
   const { HelpersFindLast } = require('@phutran98/open-ai-helpers')
 
   const input = [1, 2, 3, 4, 5];
@@ -90,7 +90,7 @@ export function isEven(x: number): boolean {
 ```
 or
 
-```
+```javascript
   import { HelpersFindLast } from '@phutran98/open-ai-helpers'
 
   const input = [1, 2, 3, 4, 5];
@@ -99,21 +99,21 @@ or
   console.log('HelpersFindLast: ',HelpersFindLast(input,fn))
 ```
 
-```
+```javascript
   import { HelpersWords } from '@phutran98/open-ai-helpers'
   const input = 'Hello world!'
 
   console.log('HelpersWords: ',HelpersFindLast(input)) // ['Hello', 'world'];
 ```
 
-```
+```javascript
   import { HelpersAll } from '@phutran98/open-ai-helpers'
   const input = [4, 2, 3];
 
   console.log('HelpersAll: ',HelpersAll(input, x => x > 1)) // true
 ```
 
-```
+```javascript
   import { HelpersAllEqual } from '@phutran98/open-ai-helpers'
   const input = [4, 2, 3];
   const input2 = [1, 1, 1];
@@ -122,30 +122,54 @@ or
   console.log('HelpersAllEqual: ',HelpersAllEqual(input2)) // true
 ```
 
-```
+```javascript
   import { HelpersApproximatelyEqual } from '@phutran98/open-ai-helpers'
 
   console.log('HelpersApproximatelyEqual: ',HelpersApproximatelyEqual(Math.PI / 2.0, 1.5708)) // true
   console.log('HelpersApproximatelyEqual: ',HelpersApproximatelyEqual(1, 2)) // false
 ```
 
-```
+```javascript
   import { HelpersArrayToCSV } from '@phutran98/open-ai-helpers'
 
   console.log('HelpersArrayToCSV: ',HelpersArrayToCSV([['a', 'b'], ['c', 'd']])) // '"a","b"\n"c","d"'
   console.log('HelpersHelpersArrayToCSVWords: ',HelpersArrayToCSV([['a', 'b'], ['c', 'd']], ';')) // '"a";"b"\n"c";"d"'
 ```
 
-```
+```javascript
   import { HelpersArrayToHtmlList } from '@phutran98/open-ai-helpers'
 
   console.log('HelpersArrayToHtmlList: ',HelpersArrayToHtmlList(['item 1', 'item 2'])) // '<ul><li>item 1</li><li>item 2</li></ul>'
 ```
 
-```
+```javascript
   import { HelpersAverage } from '@phutran98/open-ai-helpers'
 
   const input = [1, 2, 3, 4, 5];
 
   console.log('HelpersAverage: ',HelpersAverage(input)) // 3
+```
+
+```javascript
+  import { HelperMissingNumber } from '@phutran98/open-ai-helpers'
+
+  const input = [1, 2, 4, 5];
+
+  console.log('HelperMissingNumber: ',HelperMissingNumber(input)) // 3
+```
+
+```javascript
+  import { HelpersAverageBy } from '@phutran98/open-ai-helpers'
+
+  const input = [1, 2, 3, 4];
+
+  console.log('HelpersAverageBy: ',HelpersAverageBy(input, val => val)) // 2.5
+```
+
+```javascript
+  import { HelpersOnesAndZeros } from '@phutran98/open-ai-helpers'
+
+  const input = '101];
+
+  console.log('HelpersOnesAndZeros: ',HelpersAverageBy(input, '1', '0')) // 1
 ```
