@@ -311,3 +311,51 @@
 
   console.log('result: ', HelpersDeepFlatten(arr)) // [1, 2, 3, 4, 5, 6]
 ```
+### 27.HelpersCountOccurrences
+```javascript
+  import { HelpersCountOccurrences } from '@phutran98/open-ai-helpers'
+  const arr = [1, 2, 3, 2, 2, 4, 2, 5];
+  const val = 2;
+  const result = HelpersCountOccurrences(arr, val); // 4
+```
+### 28.HelpersCompact
+```javascript
+  import { HelpersCompact } from '@phutran98/open-ai-helpers'
+  const input = [0, 1, false, true, '', 'hello', null, undefined, NaN];
+  const result = HelpersCountOccurrences(arr, val); // [1, true, 'hello'];
+```
+### 29.HelpersCheckFalsy
+```javascript
+  import { HelpersCheckFalsy } from '@phutran98/open-ai-helpers'
+  const result = HelpersCheckFalsy(0); // true
+  const result = HelpersCheckFalsy(''); // true
+  const result = HelpersCheckFalsy(1); // false
+  const result = HelpersCheckFalsy('abc'); // false
+```
+### 30.HelpersCapitalizeEveryWord
+```javascript
+  import { HelpersCapitalizeEveryWord } from '@phutran98/open-ai-helpers'
+  const input = 'hello world';
+  const result = HelpersCapitalizeEveryWord(input); // 'Hello World';
+
+  const input2 = 'hello';
+  const result2 = HelpersCapitalizeEveryWord(input2); // Hello
+```
+### 31.HelpersCamelCase
+```javascript
+  import { HelpersCamelCase } from '@phutran98/open-ai-helpers'
+  const input = 'foo bar';
+  const result = HelpersCamelCase(input); // fooBar
+
+  const input2 = '--foo-bar--';
+  const result2 = HelpersCamelCase(input2); // FooBar
+```
+### 32.HelpersBaseToString
+```javascript
+  import { HelpersCamelCase } from '@phutran98/open-ai-helpers'
+  const input = 'foo bar';
+  const result = HelpersCamelCase(input); // fooBar
+
+  const input2 = '--foo-bar--';
+  const result2 = HelpersCamelCase(input2); // FooBar
+```
