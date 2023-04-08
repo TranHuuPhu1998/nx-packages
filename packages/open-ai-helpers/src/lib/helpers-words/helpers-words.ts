@@ -14,7 +14,7 @@
  * words('fred, barney, & pebbles', /[^, ]+/g)
  * // => ['fred', 'barney', '&', 'pebbles']
  */
-export function HelpersWords(string = '', pattern?: RegExp | string): string[] {
+export function words(string = '', pattern?: RegExp | string): string[] {
   // Use the provided pattern to split the string into an array of words,
   // or use the default pattern if pattern is undefined.
   const regExp = pattern !== undefined ? pattern : /[\w]+/g;

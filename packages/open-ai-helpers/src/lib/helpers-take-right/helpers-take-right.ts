@@ -5,6 +5,6 @@
  * @returns A new array containing the last n elements of the input array
  */
 
-export function HelperTakeRight<T>(arr: T[], n = 1): T[] {
+export function takeRight<T>(arr: T[], n = 1): T[] {
   return arr.slice(arr.length - n, arr.length);
 }

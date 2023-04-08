@@ -18,7 +18,7 @@ interface HelperFunction<T> {
  * @throws An error if the input array is not valid (i.e., not an object or not an array).
  */
 
-export function HelpersAll<T>(arr: T[], fn?: HelperFunction<T>): boolean {
+export function all<T>(arr: T[], fn?: HelperFunction<T>): boolean {
 
   if (typeof arr !== 'object' || !Array.isArray(arr) || arr.length <= 0) {
     throw new Error('Array not Unknown');

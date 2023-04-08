@@ -32,7 +32,7 @@
  * helperIsEmpty({ 'a': 1 });
  * // => false
  */
-export function helperIsEmpty(value: unknown): boolean {
+export function isEmpty(value: unknown): boolean {
   if (value == null) {
     return true;
   }

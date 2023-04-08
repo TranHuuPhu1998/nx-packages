@@ -1,22 +1,22 @@
-import { HelperValidateNumber } from './helpers-validate-number'
+import { validateNumber } from './helpers-validate-number'
 
-describe("HelperValidateNumber function", () => {
+describe("validateNumber function", () => {
   test("should return true for valid numbers", () => {
-    expect(HelperValidateNumber(0)).toBe(true);
-    expect(HelperValidateNumber(1)).toBe(true);
-    expect(HelperValidateNumber(-1)).toBe(true);
-    expect(HelperValidateNumber(3.14)).toBe(true);
-    expect(HelperValidateNumber(-3.14)).toBe(true);
-    expect(HelperValidateNumber("3.14")).toBe(true);
-    expect(HelperValidateNumber("-3.14")).toBe(true);
+    expect(validateNumber(0)).toBe(true);
+    expect(validateNumber(1)).toBe(true);
+    expect(validateNumber(-1)).toBe(true);
+    expect(validateNumber(3.14)).toBe(true);
+    expect(validateNumber(-3.14)).toBe(true);
+    expect(validateNumber("3.14")).toBe(true);
+    expect(validateNumber("-3.14")).toBe(true);
   });
 
   test("should return false for invalid numbers", () => {
-    expect(HelperValidateNumber("abc")).toBe(false);
-    expect(HelperValidateNumber('null')).toBe(false);
-    expect(HelperValidateNumber('undefined')).toBe(false);
-    expect(HelperValidateNumber(NaN)).toBe(false);
-    expect(HelperValidateNumber(Number.POSITIVE_INFINITY)).toBe(false);
-    expect(HelperValidateNumber(Number.NEGATIVE_INFINITY)).toBe(false);
+    expect(validateNumber("abc")).toBe(false);
+    expect(validateNumber('null')).toBe(false);
+    expect(validateNumber('undefined')).toBe(false);
+    expect(validateNumber(NaN)).toBe(false);
+    expect(validateNumber(Number.POSITIVE_INFINITY)).toBe(false);
+    expect(validateNumber(Number.NEGATIVE_INFINITY)).toBe(false);
   });
 });

@@ -4,8 +4,8 @@
  * @returns The flattened array.
  */
 
-export function HelpersDeepFlatten<T>(arr: T[]): T[] {
+export function deepFlatten<T>(arr: T[]): T[] {
   return ([] as T[]).concat(
-    ...arr.map((v) => (Array.isArray(v) ? HelpersDeepFlatten(v) : v))
+    ...arr.map((v) => (Array.isArray(v) ? deepFlatten(v) : v))
   );
 }

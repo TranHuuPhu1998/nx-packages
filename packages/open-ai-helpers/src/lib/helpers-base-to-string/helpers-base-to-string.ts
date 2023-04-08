@@ -18,16 +18,16 @@ const symbolToString = symbolProto ? symbolProto.toString : undefined;
  *
  * @example
  * 
- * HelpersBaseToString(123); // => '123'
- * HelpersBaseToString('abc'); // => 'abc'
- * HelpersBaseToString(null); // => 'null'
- * HelpersBaseToString(undefined); // => 'undefined'
- * HelpersBaseToString(Infinity); // => 'Infinity'
- * HelpersBaseToString(-Infinity); // => '-Infinity'
- * HelpersBaseToString(NaN); // => 'NaN'
- * HelpersBaseToString(Symbol('foo')); // => 'Symbol(foo)'
+ * baseToString(123); // => '123'
+ * baseToString('abc'); // => 'abc'
+ * baseToString(null); // => 'null'
+ * baseToString(undefined); // => 'undefined'
+ * baseToString(Infinity); // => 'Infinity'
+ * baseToString(-Infinity); // => '-Infinity'
+ * baseToString(NaN); // => 'NaN'
+ * baseToString(Symbol('foo')); // => 'Symbol(foo)'
  */
-export function HelpersBaseToString<T>(value: T): string {
+export function baseToString<T>(value: T): string {
   // Check for null or undefined
   if (value === null) {
     return 'null';

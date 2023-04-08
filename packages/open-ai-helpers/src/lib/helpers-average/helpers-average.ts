@@ -5,7 +5,7 @@
  * @returns The average value of the array of numbers.
  */
 
-export function HelpersAverage(...numbers: number[]): number {
+export function average(...numbers: number[]): number {
   if (typeof numbers !== 'object' || !Array.isArray(numbers) || numbers.length <= 0) {
     throw new Error('Numbers not Unknown');
   }

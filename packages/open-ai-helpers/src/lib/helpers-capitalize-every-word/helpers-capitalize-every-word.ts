@@ -4,6 +4,6 @@
  * @returns A new string with the first letter of every word capitalized.
  */
 
-export function HelpersCapitalizeEveryWord(str: string): string {
+export function capitalizeEveryWord(str: string): string {
   return str.replace(/\b[a-z]/g, (char: string) => char.toUpperCase());
 }

@@ -1,18 +1,18 @@
-import { HelpersCheckFalsy } from './helpers-check-falsy'
+import { checkFalsy } from './helpers-check-falsy'
 
-describe('HelpersCheckFalsy', () => {
+describe('checkFalsy', () => {
   it('should return true for falsy values', () => {
-    expect(HelpersCheckFalsy(0)).toBe(true);
-    expect(HelpersCheckFalsy('')).toBe(true);
-    expect(HelpersCheckFalsy(false)).toBe(true);
-    expect(HelpersCheckFalsy(undefined)).toBe(true);
-    expect(HelpersCheckFalsy(null)).toBe(true);
+    expect(checkFalsy(0)).toBe(true);
+    expect(checkFalsy('')).toBe(true);
+    expect(checkFalsy(false)).toBe(true);
+    expect(checkFalsy(undefined)).toBe(true);
+    expect(checkFalsy(null)).toBe(true);
   });
 
   it('should return false for truthy values', () => {
-    expect(HelpersCheckFalsy(1)).toBe(false);
-    expect(HelpersCheckFalsy('abc')).toBe(false);
-    expect(HelpersCheckFalsy(true)).toBe(false);
-    expect(HelpersCheckFalsy({})).toBe(false);
+    expect(checkFalsy(1)).toBe(false);
+    expect(checkFalsy('abc')).toBe(false);
+    expect(checkFalsy(true)).toBe(false);
+    expect(checkFalsy({})).toBe(false);
   });
 });

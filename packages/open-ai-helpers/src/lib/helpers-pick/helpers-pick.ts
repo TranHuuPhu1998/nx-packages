@@ -12,10 +12,10 @@
  *
  * const object = { 'a': 1, 'b': '2', 'c': 3 };
  *
- * HelperPick(object, ['a', 'c']);
+ * pick(object, ['a', 'c']);
  * // => { 'a': 1, 'c': 3 }
  */
-export function HelperPick<T extends object, K extends keyof T>(
+export function pick<T extends object, K extends keyof T>(
   object: T,
   ...paths: Array<K | Array<K>>
 ): Pick<T, K> {

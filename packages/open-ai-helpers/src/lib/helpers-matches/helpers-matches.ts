@@ -5,7 +5,7 @@
  * @returns `true` if the object matches the source object, `false` otherwise.
  */
 
-export function HelpersMatches(obj: Record<string, unknown>, source: Record<string, unknown>): boolean {
+export function matches(obj: Record<string, unknown>, source: Record<string, unknown>): boolean {
   return Object.keys(source).every
     ((key) =>
       Object.prototype.hasOwnProperty.call(obj, key) && obj[key] === source[key]

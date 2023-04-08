@@ -13,6 +13,6 @@
  * checkFalsy(true); // false
  * checkFalsy({}); // false
  */
-export function HelpersCheckFalsy(value: unknown): boolean {
+export function checkFalsy(value: unknown): boolean {
   return !value;
 }

@@ -4,7 +4,7 @@
  * @returns An HTML list string
  * @throws An error if the input is not an array
  */
-export function HelpersArrayToHtmlList<T>(items: T[]): string | null {
+export function arrayToHtmlList<T>(items: T[]): string | null {
 
   if (!Array.isArray(items)) {
     throw new Error('Input must be an array');

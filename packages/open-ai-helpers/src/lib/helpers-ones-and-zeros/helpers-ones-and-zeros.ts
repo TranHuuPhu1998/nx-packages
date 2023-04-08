@@ -7,7 +7,7 @@
  * @example
  * onesAndZeros("101", "1", "0") // Output: 1
  */
-export function HelpersOnesAndZeros(s: string, one: string, zero: string): number {
+export function onesAndZeros(s: string, one: string, zero: string): number {
   const arr: string[] = s.split('');
   let count1 = 0;
   let count0 = 0;

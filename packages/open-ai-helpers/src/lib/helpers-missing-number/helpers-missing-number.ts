@@ -9,7 +9,7 @@
  * HelperMissingNumber([1, 2, 4])
  * // Output: 3
  */
-export function HelperMissingNumber(arr: number[]): number {
+export function missingNumber(arr: number[]): number {
   const n = arr.length;
 
   if (n < 1 || n > 100000) {

@@ -4,7 +4,7 @@
  * @returns A boolean indicating whether the input string is valid JSON
  */
 
-export const HelpersIsValidJSON = (str: string): boolean => {
+export const isValidJSON = (str: string): boolean => {
   try {
     JSON.parse(str);
     return true;

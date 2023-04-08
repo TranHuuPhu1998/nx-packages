@@ -4,6 +4,6 @@
  * @returns A new array with the falsy values removed.
  */
 
-export function HelpersCompact<T>(arr: T[]): T[] {
+export function compact<T>(arr: T[]): T[] {
   return arr.filter(Boolean);
 }

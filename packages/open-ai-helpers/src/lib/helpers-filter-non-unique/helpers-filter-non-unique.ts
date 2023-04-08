@@ -4,6 +4,6 @@
  * @returns An array with only the unique elements from the input array
  */
 
-export function HelpersFilterNonUnique<T>(arr: T[]): T[] {
+export function filterNonUnique<T>(arr: T[]): T[] {
   return arr.filter((i) => arr.indexOf(i) === arr.lastIndexOf(i));
 }

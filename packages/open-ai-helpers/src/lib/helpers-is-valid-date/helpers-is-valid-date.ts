@@ -11,6 +11,6 @@
  * // Invalid date case
  * HelperIsValidDate("abc"); // false
  */
-export function HelperIsValidDate(value: unknown): value is Date {
+export function isValidDate(value: unknown): value is Date {
   return value instanceof Date && !isNaN(value as unknown as number);
 }

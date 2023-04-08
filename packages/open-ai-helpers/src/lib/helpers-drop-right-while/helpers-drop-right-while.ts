@@ -4,7 +4,7 @@
  * @param func The predicate function used to test the elements.
  * @returns Returns the new array of dropped elements.
  */
-export function HelpersDropRightWhile<T>(arr: T[], func: (value: T) => boolean): T[] {
+export function dropRightWhile<T>(arr: T[], func: (value: T) => boolean): T[] {
   while (arr.length > 0 && !func(arr[arr.length - 1])) arr = arr.slice(0, -1);
   return arr;
 };
