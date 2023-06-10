@@ -5,7 +5,7 @@
  * @returns The last element in the array that satisfies the testing function. Returns undefined if no such element is found
  */
 
-export function HelpersFindLast<T>(arr: T[], fn: (elem: T) => boolean): T | undefined {
+export function findLast<T>(arr: T[], fn: (elem: T) => boolean): T | undefined {
   const filteredArr = arr.filter(fn);
   return filteredArr.pop();
 }

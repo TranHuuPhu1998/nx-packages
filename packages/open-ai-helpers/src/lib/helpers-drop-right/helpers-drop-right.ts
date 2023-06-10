@@ -4,7 +4,7 @@
  * @param n The number of elements to drop. Default is 1.
  * @returns A new array with the last n elements removed.
  */
-export function HelpersDropRight<T>(arr: T[], n = 1): T[] {
+export function dropRight<T>(arr: T[], n = 1): T[] {
   if (n < 0) {
     throw new Error('n must be a positive integer or zero.');
   }

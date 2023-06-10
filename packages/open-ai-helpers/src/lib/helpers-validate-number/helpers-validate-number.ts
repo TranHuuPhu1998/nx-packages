@@ -13,7 +13,7 @@
  */
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
-export function HelperValidateNumber(n: string | number): boolean {
+export function validateNumber(n: string | number): boolean {
   const parsedNumber = parseFloat(n.toString().replace(/,/g, ''));
   return !isNaN(parsedNumber) && isFinite(parsedNumber) && Number(n) == parsedNumber;
 }

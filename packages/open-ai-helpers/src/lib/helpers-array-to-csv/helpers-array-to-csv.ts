@@ -6,7 +6,7 @@
  * @throws If arr is not an array or doesn't contain any elements.
  */
 
-export function HelpersArrayToCSV<T extends Array<string>>(arr: T[], delimiter = ','): string {
+export function arrayToCSV<T extends Array<string>>(arr: T[], delimiter = ','): string {
 
   if (typeof arr !== 'object' || !Array.isArray(arr) || arr.length <= 0) {
     throw new Error('Array is not defined');

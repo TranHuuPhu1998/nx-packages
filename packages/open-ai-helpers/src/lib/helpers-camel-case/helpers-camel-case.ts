@@ -18,7 +18,7 @@
  * console.log(result3); // Output: 'fooBar'
  * ```
  */
-export function HelpersCamelCase(str = ''): string {
+export function camelCase(str = ''): string {
   return str.trim()
     .replace(/[_-]+/g, ' ')
     .split(' ')

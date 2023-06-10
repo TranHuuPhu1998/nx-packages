@@ -8,7 +8,7 @@
  * @returns A boolean value indicating whether the two input numbers are approximately equal to each other.
  */
 
-export function HelpersApproximatelyEqual(firstNumber: number, secondNumber: number, epsilon = 0.001): boolean {
+export function approximatelyEqual(firstNumber: number, secondNumber: number, epsilon = 0.001): boolean {
 
   const absoluteValue = Math.abs(firstNumber - secondNumber);
 

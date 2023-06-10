@@ -15,7 +15,7 @@
  * groupBy([6.1, 4.2, 6.3], Math.floor)
  * // => { '4': [4.2], '6': [6.1, 6.3] }
  */
-export function HelpersGroupBy<T>(
+export function groupBy<T>(
   collection: Array<T> | Record<string, T>,
   iteratee: (value: T) => number | string
 ): Record<string, Array<T>> {

@@ -5,7 +5,7 @@
  * @throws {Error} If the first parameter is not a string.
  */
 
-export function HelpersCapitalize(first: string): string {
+export function capitalize(first: string): string {
   if (typeof first !== 'string') {
     throw new Error('First not Unknown');
   }

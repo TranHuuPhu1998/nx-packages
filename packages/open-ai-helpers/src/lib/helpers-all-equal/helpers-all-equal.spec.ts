@@ -1,25 +1,25 @@
-import { HelpersAllEqual } from './helpers-all-equal';
+import { allEqual } from './helpers-all-equal';
 
-describe('HelpersAllEqual check all elements are equal', () => {
+describe('allEqual check all elements are equal', () => {
   it('should work', () => {
-    expect(HelpersAllEqual([1, 1, 1])).toEqual(true);
+    expect(allEqual([1, 1, 1])).toEqual(true);
   });
 });
 
-describe('HelpersAllEqual check have one element are different', () => {
+describe('allEqual check have one element are different', () => {
   it('should work', () => {
-    expect(HelpersAllEqual([1, 2, 3])).toEqual(false);
+    expect(allEqual([1, 2, 3])).toEqual(false);
   });
 });
 
-describe('HelpersAllEqual check have one element are different with element is string', () => {
+describe('allEqual check have one element are different with element is string', () => {
   it('should work', () => {
-    expect(HelpersAllEqual([1, '1', 1])).toEqual(false);
+    expect(allEqual([1, '1', 1])).toEqual(false);
   });
 });
 
-describe('HelpersAllEqual check if array []', () => {
+describe('allEqual check if array []', () => {
   it('should work', () => {
-    expect(() => HelpersAllEqual([])).toThrowError('Array not Unknown');
+    expect(() => allEqual([])).toThrowError('Array not Unknown');
   });
 });

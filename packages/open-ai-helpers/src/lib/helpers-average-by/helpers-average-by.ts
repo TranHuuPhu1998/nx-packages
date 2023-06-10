@@ -7,7 +7,7 @@
  * or a property name to be used as a key to extract a numeric value from each element.
  * @returns The average value of the array.
  */
-export function HelpersAverageBy<T>(arr: T[], fn: keyof T | ((val: T) => number)): number {
+export function averageBy<T>(arr: T[], fn: keyof T | ((val: T) => number)): number {
 
   const mapperFn = typeof fn === 'function' ? fn : (val: T) => val[fn] as unknown as number;
 

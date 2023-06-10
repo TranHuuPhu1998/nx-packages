@@ -4,6 +4,6 @@
  * @param n - The number of elements to take from the beginning of the array (default 1)
  * @returns A new array containing the first n elements of the input array
  */
-export function HelperTake<T>(arr: T[], n = 1): T[] {
+export function take<T>(arr: T[], n = 1): T[] {
   return arr.slice(0, n);
 }

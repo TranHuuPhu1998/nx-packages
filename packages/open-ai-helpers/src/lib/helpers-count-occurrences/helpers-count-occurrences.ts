@@ -5,6 +5,6 @@
  * @returns The number of occurrences of the value in the array.
  */
 
-export function HelpersCountOccurrences<T>(arr: T[], val: T): number {
+export function countOccurrences<T>(arr: T[], val: T): number {
   return arr.reduce((a, v) => (v === val ? a + 1 : a), 0);
 }

@@ -8,6 +8,6 @@
  * toCurrency(1234.56, 'EUR', 'fr-FR') // returns "1234,56€"
  * toCurrency(1234.56, 'GBP', 'en-GB') // returns "£1,234.56"
  */
-export function HelpersToCurrency(n: number, curr: string, LanguageFormat?: string): string {
+export function toCurrency(n: number, curr: string, LanguageFormat?: string): string {
   return Intl.NumberFormat(LanguageFormat, { style: 'currency', currency: curr }).format(n);
 }

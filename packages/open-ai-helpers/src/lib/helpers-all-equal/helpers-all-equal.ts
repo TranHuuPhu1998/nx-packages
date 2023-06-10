@@ -8,7 +8,7 @@
  * @throws An error if the input array is not valid (i.e., not an object or not an array).
  */
 
-export function HelpersAllEqual<T>(arr: T[]): boolean {
+export function allEqual<T>(arr: T[]): boolean {
 
   if (typeof arr !== 'object' || !Array.isArray(arr) || arr.length <= 0) {
     throw new Error('Array not Unknown');

@@ -5,4 +5,4 @@
  * @returns A boolean indicating whether the two dates represent the same date (ignoring time)
  */
 
-export const HelpersIsSameDate = (dateA: Date, dateB: Date): boolean => dateA.toISOString() === dateB.toISOString();
+export const isSameDate = (dateA: Date, dateB: Date): boolean => dateA.toISOString() === dateB.toISOString();

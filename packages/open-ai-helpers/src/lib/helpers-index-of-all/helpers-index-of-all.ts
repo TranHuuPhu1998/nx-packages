@@ -5,6 +5,6 @@
  * @returns An array of indices where the value is found in the input array
  */
 
-export function HelpersIndexOfAll<T>(arr: T[], val: T): number[] {
+export function indexOfAll<T>(arr: T[], val: T): number[] {
   return arr.reduce((acc: number[], el: T, i: number) => (el === val ? [...acc, i] : acc), []);
 }
